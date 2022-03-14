@@ -1,1 +1,1 @@
-# LotteryChromeExtension
+# EuroMillions Chrome Extension
