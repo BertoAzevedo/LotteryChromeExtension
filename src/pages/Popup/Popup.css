@@ -48,3 +48,36 @@
   max-height: 400px;
   overflow-y: scroll;
 }
+
+.lastGameKey span {
+  background: url(/src/assets/img/bg-number.png) no-repeat left top;
+  color: #898989;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  padding-top: 5px;
+  margin-left: -3px;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  padding-right: 8px;
+}
+
+span.star {
+  background: url(/src/assets/img/bg-star.png) no-repeat left top;
+  color: #898989;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  padding-top: 5px;
+  margin-left: -3px;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+}
+
+span.spacer {
+  background: none !important;
+  width: 9px !important;
+  margin: 0 0 0 0px !important;
+}

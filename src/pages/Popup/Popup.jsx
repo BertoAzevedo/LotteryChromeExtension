@@ -68,50 +68,79 @@ class Popup extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={LogoEuromilhoes} alt="logo" style={{ marginBottom: 10 }} />
+          <img src={LogoEuromilhoes} alt="logo" style={{ marginBottom: 12 }} />
           {this.state.results.map((r, i) => {
-            if (r.name === 'Euromilhões')
+            if (r.name === 'Euromilhões') {
+              let key = r.key.split(' ');
               return (
                 <div key={i}>
                   <div className="new-line" style={{ marginBottom: 8 }}>
-                    {r.key}
+                    <span className="lastGameKey">
+                      <span>{key[0]}</span>
+                      <span>{key[1]}</span>
+                      <span>{key[2]}</span>
+                      <span>{key[3]}</span>
+                      <span>{key[4]}</span>
+                      <span className="spacer">{key[5]}</span>
+                      <span className="star">{key[6]}</span>
+                      <span className="star">{key[7]}</span>
+                    </span>
                   </div>
-                  <div className="new-line">{r.date}</div>
+                  <div className="new-line" style={{ fontSize: 14 }}>
+                    {r.date}
+                  </div>
                 </div>
               );
-            else return '';
+            } else return '';
           })}
           <br></br>
-          <img src={LogoMilhao} alt="logo" style={{ marginBottom: 10 }} />
+          <img src={LogoMilhao} alt="logo" style={{ marginBottom: 12 }} />
           {this.state.results.map((r, i) => {
             if (r.name === 'M1lhão')
               return (
                 <div key={i}>
-                  <div className="new-line" style={{ marginBottom: 8 }}>
+                  <div
+                    className="new-line"
+                    style={{ marginBottom: 8, fontSize: 16 }}
+                  >
                     {r.key}
                   </div>
-                  <div className="new-line">{r.date}</div>
+                  <div className="new-line" style={{ fontSize: 14 }}>
+                    {r.date}
+                  </div>
                 </div>
               );
             else return '';
           })}
           <br></br>
-          <img src={LogoTotoloto} alt="logo" style={{ marginBottom: 10 }} />
+          <img src={LogoTotoloto} alt="logo" style={{ marginBottom: 12 }} />
           {this.state.results.map((r, i) => {
-            if (r.name === 'Totoloto')
+            if (r.name === 'Totoloto') {
+              let key = r.key.split(' ');
               return (
                 <div key={i}>
                   <div className="new-line" style={{ marginBottom: 8 }}>
-                    {r.key}
+                    <span className="lastGameKey">
+                      <span>{key[0]}</span>
+                      <span>{key[1]}</span>
+                      <span>{key[2]}</span>
+                      <span>{key[3]}</span>
+                      <span>{key[4]}</span>
+                      <span className="spacer">{key[5]}</span>
+                      <span className="star">{key[6]}</span>
+                    </span>
                   </div>
-                  <div className="new-line">{r.date}</div>
+                  <div className="new-line" style={{ fontSize: 14 }}>
+                    {r.date}
+                  </div>
                 </div>
               );
-            else return '';
+            } else return '';
           })}
           <br></br>
-          <div className="new-line" style={{ fontSize: 12 }}>
-            Update: {this.state.pubdate}
+          <br></br>
+          <div className="new-line" style={{ fontSize: 10 }}>
+            Last Update: {this.state.pubdate}
           </div>
         </header>
       </div>

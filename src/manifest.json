@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Lottery Chrome Extension",
-  "description": "Lottery chrome extension to check latest lottery results",
+  "name": "Euromilhões, M1lhão e Totoloto Chrome Extension",
+  "description": "Lottery chrome extension to check latest lottery results from Euromillions (Euromilhões), M1llion (M1lhão) and Totoloto",
   "background": { "service_worker": "background.bundle.js" },
   "action": {
     "default_popup": "popup.html",
@@ -25,7 +25,9 @@
         "icon-34.png",
         "euromilhoes.png",
         "totoloto.png",
-        "milhao.png"
+        "milhao.png",
+        "bg-number.png",
+        "bg-star.png"
       ],
       "matches": []
     }
