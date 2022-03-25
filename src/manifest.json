@@ -11,6 +11,7 @@
   },
   "content_scripts": [
     {
+      "matches": ["http://*/*", "https://*/*", "<all_urls>"],
       "js": ["contentScript.bundle.js"],
       "css": ["content.styles.css"]
     }
@@ -26,7 +27,8 @@
         "milhao.png",
         "bg-number.png",
         "bg-star.png"
-      ]
+      ],
+      "matches": []
     }
   ]
 }
